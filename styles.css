@@ -166,10 +166,12 @@ img.inicio {
   object-fit: cover; 
 }
 .footer-copyright {
+  text-align: center;
   color: #ffffff;
   padding-top: 1rem;
 }
 .list-footer{
+  padding-left: 0;
   list-style-type: none;
 }
 .list-link{
