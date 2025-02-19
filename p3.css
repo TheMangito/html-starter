@@ -1,0 +1,154 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #FDFBFE;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+
+ul.menu {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+ul.menu li {
+  margin: 0 10px;
+}
+
+/* Estilo de los enlaces */
+ul.menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Efecto hover */
+ul.menu li a:hover {
+  background-color: #111;
+}
+
+img.inicio {
+  display: block;
+  width: 100vw;
+  height: 35dvw;      
+  object-fit: cover; 
+}
+
+.mainimage {
+  padding-top: 4.1rem;
+  max-width: max-content;
+  max-height: max-content;
+}
+
+.grid {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 350px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-yg-logo {
+  width: auto;
+  height: auto; 
+  border-radius: 10px;
+  object-fit:contain; 
+  margin-bottom: 1rem;
+}
+
+/* Add these new classes */
+.grid-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item h2 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.grid-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.grid-div-info{
+  text-align: center;
+}
+
+
+.info-grid {
+  padding: 5rem 5rem 5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-info{
+  max-width: 200px;
+  text-align: center;
+}
+
+.info-grid-item{
+  text-align: left;
+}
+
+.info-image {
+  display: block;
+  width: 37vw;
+  height: auto;      
+  object-fit: cover; 
+  border-radius: 20px;
+}
+
+.text-miembros{
+  font-size: 64px;
+  text-align: center;
+  width: 100%;
+}
+
+.text-info-p{
+  font-size: 16px;
+  text-align: center;
+}
+.text-info-title{
+  font-size: 48px;
+  text-align: center;
+
+}
