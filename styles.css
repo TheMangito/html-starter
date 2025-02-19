@@ -170,11 +170,25 @@ img.inicio {
   color: #ffffff;
   padding-top: 1rem;
 }
+.footer-copyright-link {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 1rem;
+}
+.footer-copyright-link:hover{
+  font-size: 17px;
+  color: #dcdae6;
+}
 .list-footer{
   padding-left: 0;
   list-style-type: none;
 }
+
 .list-link{
   color: #ffffff;
   text-decoration: none;
+}
+.list-link:hover{
+  color: #dcdae6;
+  font-size: 17px;
 }
