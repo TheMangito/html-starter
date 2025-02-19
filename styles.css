@@ -95,6 +95,8 @@ img.inicio {
   flex-direction: column;
 }
 
+
+
 .grid-item h2 {
   margin: 0.5rem 0;
   font-size: 1.25rem;
@@ -151,4 +153,19 @@ img.inicio {
   font-size: 48px;
   text-align: center;
 
+}
+
+.footer{
+  background-color: #333;
+}
+
+.footer-image {
+  padding-top: 2.7rem;
+  width: 15vw;
+  height: auto;      
+  object-fit: cover; 
+}
+.footer-copyright {
+  color: #ffffff;
+  padding-top: 1rem;
 }
