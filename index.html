@@ -1,96 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="menu">
+        <ul class="menu">
+            <li><a>INICIO</a></li>
+            <li><a>NOVEDADES</a></li>
+            <li><a>MIEMBROS</a></li>
+            <li><a>CONTACTO</a></li>
+        </ul>      
+    </div>
+</header>
+<body>
+    <div class="mainimage">
+        <img class="inicio" src="babymonster.jpg" alt="Miembros del Grupo">
+    </div>
+    <section>
+        <div class="info-grid">
+            <div class="info-grid-item">
+                <h1 >BABYMONSTER</h1>
+                <p>Es un grupo femenino de K-pop formado por YG Entertainment en 2023. El grupo está compuesto por siete talentosas integrantes originarias de Corea del Sur, Japón y Tailandia. Su nombre refleja la combinación de juventud y habilidades excepcionales, describiéndolas como "pequeños monstruos" llenos de talento. </p>
+            </div>
+            <center><img class="info-image" src="bm.jpg" alt="YG Entertainment Logo"></center>
+        </div>        
+    </section>
+
+    <section>
+        <div class="info-grid">
+            <img class="info-image" src="training.png">
+            <div class="info-grid-item">
+                <h1 class="text-info-title">BABYMONSTER</h1>
+                <p class="text-info-p">YG Entertainment comenzó a planificar un nuevo grupo femenino en 2018. Después de un riguroso proceso de selección y entrenamiento, BABYMONSTER fue presentado oficialmente en 2023. </p>
+            </div>
+
+        </div>        
+    </section>
+
+    <section>
+        <div>
+            <h2 class="text-miembros">Miembros</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="chiquita_1.jpg" alt="Chiquita">
+                    <div class="grid-item-content">
+                        <h2>Chiquita</h2>
+                        <p>Miembro tailandesa de 15 años, la más joven del grupo, conocida por su impresionante habilidad en el baile.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="rora_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Rora</h2>
+                        <p>Miembro surcoreana de 15 años, exintegrante del grupo infantil U.SSO Girl, aporta dulzura y talento vocal.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="rami_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Rora</h2>
+                        <p>Miembro Surcoreana de 16 años, comenzó como modelo infantil y destaca por su voz melodiosa.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="ahyeon_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Rora</h2>
+                        <p>Miembro Surcoreana de 16 años, versátil en canto, rap y baile, considerada el "rostro del grupo.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="asa_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Rora</h2>
+                        <p>Miembro Japonesa de 17 años, talentosa rapera y bailarina, con habilidades en composición musical.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="pharita_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Rora</h2>
+                        <p>Miembro Tailandesa de 18 años, reconocida por su potente voz y experiencia en modelaje.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="ruka_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Rora</h2>
+                        <p>Miembro Japonesa de 22 años, destacada rapera y bailarina principal del grupo.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+    
+    </section>
+</body>
 </html>
+
