@@ -6,6 +6,24 @@ html, body {
   line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  .info-grid {
+      grid-template-columns: 1fr; /* Cambia a una sola columna */
+  }
+
+  .text-container {
+      text-align: center; /* Alineación para mejorar la lectura */
+  }
+}
+
+.video-youtube{
+  width: 70vw;
+  height: 50vw;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  object-fit: cover;
+}
+
 .menu {
   position: fixed;
   top: 0;
