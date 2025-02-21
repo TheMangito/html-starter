@@ -166,6 +166,9 @@ img.inicio {
   .text-container {
       text-align: center; /* Alineación para mejorar la lectura */
   }
+  ul.menu li a{
+    font-size: 10px;
+  }
 }
 
 .footer{
