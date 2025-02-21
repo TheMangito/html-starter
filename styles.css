@@ -168,9 +168,10 @@ img.inicio {
   text-align: center;
 }
 .text-info-title{
-  font-size: 48px;
+  min-width: 50px;
+  font-size: 32px;
   text-align: center;
-
+  width: auto;
 }
 
 .footer{
