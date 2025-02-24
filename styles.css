@@ -4,6 +4,7 @@ html, body {
   background-color: #FDFBFE;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
+  max-height: 5000px;
 }
 
 .menu {
@@ -15,13 +16,13 @@ html, body {
   text-align: center;
   background-color: #333;
   padding: 10px 0;
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  z-index: 1000;
 }
 
 
 ul.menu {
   display: flex;
-  justify-content: center; /* Centra horizontalmente los elementos */
+  justify-content: center;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -61,39 +62,29 @@ img.inicio {
 }
 
 .grid {
-  padding-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-content: center;
-  gap: 20px;
-  padding: 1rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  );
+  gap: 20px
 }
 
 .grid-item {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   text-align: center;
-  height: 350px; 
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
 .image-yg-logo {
+  padding: 10px;
   width: auto;
-  height: auto; 
+  min-width: 200px;
+  max-width: 300px;
   border-radius: 10px;
   object-fit:contain; 
   margin-bottom: 1rem;
-}
-
-/* Add these new classes */
-.grid-item-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .grid-item h2 {
@@ -102,11 +93,22 @@ img.inicio {
 }
 
 .grid-item p {
-  margin: 0;
+  padding: 10px;
   font-size: 0.9rem;
   color: #666;
+
 }
 
+.grid-item-content{
+  margin: 0 20px;
+  
+}
+/*
+.grid div:first-child{
+  grid-column-start: 1;
+  grid-column-end: 3;;
+}
+*/
 .grid-div-info{
   text-align: center;
 }
@@ -170,6 +172,8 @@ img.inicio {
     font-size: 10px;
   }
 }
+
+
 
 .footer{
   background-color: #333;
