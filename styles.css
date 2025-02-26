@@ -67,7 +67,7 @@ img.inicio {
     auto-fit,
     minmax(300px, 1fr)
   );
-  gap: 20px
+  gap: 20px;
 }
 
 .grid-item {
