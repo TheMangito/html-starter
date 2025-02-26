@@ -134,8 +134,8 @@ img.inicio {
 
 .info-image {
   padding: 10px;
-  height: 10%;
-  max-width: 300px;
+  width: 35vw;
+  min-width: 150px;
   border-radius: 10px;
   object-fit: cover; 
   margin-bottom: 1rem;
