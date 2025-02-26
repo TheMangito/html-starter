@@ -135,9 +135,9 @@ img.inicio {
 .info-image {
   padding: 10px;
   height: 10%;
-  max-width: 500px;
+  max-width: 300px;
   border-radius: 10px;
-  object-fit: contain; 
+  object-fit: cover; 
   margin-bottom: 1rem;
 }
 
@@ -172,7 +172,6 @@ img.inicio {
     font-size: 10px;
   }
 }
-
 
 
 .footer{
