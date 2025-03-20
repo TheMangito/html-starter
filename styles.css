@@ -254,3 +254,16 @@ img.inicio {
 .grid-item-audio:hover{
   scale: 1.01;
 }
+
+
+/* Pagina de discografia estilos*/
+
+.section-discography{
+  width: 100%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.section-discography div img{
+  width: 100%;
+}
