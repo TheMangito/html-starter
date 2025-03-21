@@ -2,9 +2,10 @@ html, body {
   height: 100%;
   margin: 0;
   background-color: #FDFBFE;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   line-height: 1.6;
   max-height: 5000px;
+
 }
 
 .menu {
@@ -177,6 +178,17 @@ img.inicio {
 }
 
 @media (max-width: 768px) {
+  .discografia-div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discografia-div img{
+    width: 100%;
+    height: 100%;
+  }
+
   .info-grid {
       grid-template-columns: 1fr; /* Cambia a una sola columna */
       gap: 0px;
@@ -259,11 +271,75 @@ img.inicio {
 /* Pagina de discografia estilos*/
 
 .section-discography{
-  width: 100%;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-top: 12vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: center;
 }
 
-.section-discography div img{
+.discografia-div{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1080px;
+}
+
+.discografia-div-img {
   width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  object-fit: cover; /* O 'contain' si prefieres que no recorte */
+  display: block;
+}
+
+.album-div-info{
+  width: 100%;
+}
+
+.album-title{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.album-subtitle{
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.album-date{
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #999;
+}
+.album-button-comprar{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  justify-self: right;
+}
+
+.album-div-buy{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-bottom: solid #6666665d;
+  border-width: 2px;
+  width: 100%;
+  padding-bottom: 5px;
+  font-size: 1.1vw;
+
+}
+
+.album-more{
+  margin-top: 100px;
+  padding-top: 100px;
+  text-decoration: none;
+  color: #66666670;
+  font-weight: 800;
 }
