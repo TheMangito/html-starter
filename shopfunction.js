@@ -47,6 +47,8 @@ function agregarAlCarrito() {
 function mostrarCarrito() {
     const contenedor = document.getElementById("contenedor-carrito");
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    let subtotal = 0; // Inicializamos el subtotal
   
     carrito.forEach(item => {
       const nuevoDiv = document.createElement("div");
@@ -74,6 +76,7 @@ function mostrarCarrito() {
       nuevoDiv.style.margin = "10px 0";
       contenedor.appendChild(nuevoDiv);
 
+      // Sumar el precio al subtotal
       subtotal += item.precio;
     });
 
