@@ -386,6 +386,16 @@ img.inicio {
   font-size: 1em;
 }
 
+.album-div-buy button{
+  background: none;
+  border: none;
+  font-family: 'klavika-web';
+  &:hover{
+    cursor: pointer;
+    color: #ef4023;
+  }
+}
+
 .album-more{
   margin-top: 100px;
   padding-top: 100px;
