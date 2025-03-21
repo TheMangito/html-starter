@@ -289,7 +289,7 @@ img.inicio {
 }
 
 .discografia-div-img {
-  width: 100%;
+  width: 40vw;
   max-width: 500px;
   aspect-ratio: 1/1;
   object-fit: cover; /* O 'contain' si prefieres que no recorte */
