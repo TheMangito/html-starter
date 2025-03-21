@@ -68,30 +68,37 @@ function mostrarCarrito() {
       }
   
       const nuevoDiv = document.createElement("div");
-      
-      // Crear nombre del producto
-      const nombreProducto = document.createElement("h2");
-      nombreProducto.textContent = item.nombre;
-      nuevoDiv.appendChild(nombreProducto);
-      
-      // Crear precio del producto
-      const precioProducto = document.createElement("p");
-      precioProducto.textContent = `Precio: $${item.precio}`;
-      nuevoDiv.appendChild(precioProducto);
-      
+  
       // Crear imagen del producto
       const imagenProducto = document.createElement("img");
       imagenProducto.src = item.imagen;
       imagenProducto.alt = item.nombre;
       imagenProducto.style.width = "100px"; // Ajustar el tamaño de la imagen
       nuevoDiv.appendChild(imagenProducto);
-      
+  
+      // Crear contenedor de texto (nombre + precio)
+      const textoProducto = document.createElement("div");
+      textoProducto.classList.add("texto");
+  
+      // Crear nombre del producto
+      const nombreProducto = document.createElement("h2");
+      nombreProducto.textContent = item.nombre;
+      textoProducto.appendChild(nombreProducto);
+  
+      // Crear precio del producto
+      const precioProducto = document.createElement("p");
+      precioProducto.textContent = `Precio: $${item.precio}`;
+      textoProducto.appendChild(precioProducto);
+  
+      // Añadir el contenedor de texto al div principal
+      nuevoDiv.appendChild(textoProducto);
+  
       // Estilo del div
-      nuevoDiv.style.border = "1px solid black";
-      nuevoDiv.style.padding = "10px";
-      nuevoDiv.style.margin = "10px 0";
+      nuevoDiv.style.padding = "8px";
+      nuevoDiv.style.margin = "10px";
+      nuevoDiv.style.borderRadius = "10px";
       contenedor.appendChild(nuevoDiv);
-      
+  
       // Sumar el precio al subtotal
       subtotal += item.precio;
     });
@@ -116,6 +123,7 @@ function mostrarCarrito() {
       console.error("No se pudieron encontrar los elementos de subtotal y total.");
     }
   }
+  
   
 
 // Verificamos si estamos en la página de carrito para ejecutar la función mostrarCarrito()
