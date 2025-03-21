@@ -4,12 +4,45 @@
 	box-sizing: border-box;
 }
 body {
-	background: #ffe3e2;
+	background: #fefffe;
 	font-family: montserrat;
+}
+
+#contenedor-carrito div {
+	background-color:#f5f4f6;
+	display: flex; /* Usamos flex para alinear imagen y texto horizontalmente */
+	align-items: center; /* Alineamos los elementos verticalmente al centro */
+	margin-bottom: 10px;
+	padding: 10px;
+  }
+
+  
+#contenedor-carrito div img {
+	width: 100px; /* Ajusta el tamaño de la imagen */
+	height: auto; /* Mantiene la proporción de la imagen */
+	margin-right: 15px; /* Espacio entre la imagen y el texto */
+  }
+
+  
+#contenedor-carrito div .texto {
+	display: flex;
+	flex-direction: column; /* Asegura que el nombre y precio estén uno debajo del otro */
+	justify-content: center;
+  }
+
+  #contenedor-carrito div h2, #contenedor-carrito div p {
+	margin: 0; /* Quitamos los márgenes predeterminados para que el texto esté alineado correctamente */
+  }
+
+h1{
+	text-align: center;
+	
 }
 .wrapper {
 	max-width: 1000px;
 	margin: 0 auto;
+	width: 100%;
+	text-align: center;
 }
 .wrapper h1 {
 	padding: 20px 0;
@@ -140,14 +173,4 @@ body {
 	.wrapper {
 		max-width: 95%;
 	}
-}
-.contenerdor-carrito{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 20px 0;
-	padding: 20px;
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
