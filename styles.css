@@ -1,4 +1,5 @@
 html, body {
+
   height: 100%;
   margin: 0;
   background-color: #FDFBFE;
@@ -6,6 +7,12 @@ html, body {
   line-height: 1.6;
   max-height: 5000px;
 
+}
+
+@font-face {
+  font-family: 'klavika-web';
+  src: url('fonts/klavika-bold.otf') format('opentype');
+  font-weight: bold;
 }
 
 .menu {
@@ -68,9 +75,13 @@ img.inicio {
 }
 
 .mainimage {
+  width: 100vw;
+  height: 35dvw;
   padding-top: 4.1rem;
   max-width: max-content;
   max-height: max-content;
+  display: flex;
+  justify-content: center;
 }
 
 .grid {
@@ -171,9 +182,12 @@ img.inicio {
   width: auto;
 }
 .text-info-title{
+
+  font-family: "klavika-web", sans-serif;
   min-width: 50px;
   font-size: 32px;
   text-align: center;
+  font-weight: bold;
   width: auto;
 }
 
@@ -200,6 +214,14 @@ img.inicio {
   ul.menu li a{
     font-size: 10px;
   }
+
+  .div-titles h1{
+    font-size: 12vw;
+  }
+  .div-titles h3{
+    font-size: 4vw;
+  }
+
 }
 
 
@@ -269,9 +291,35 @@ img.inicio {
 
 
 /* Pagina de discografia estilos*/
+.div-titles{
+  margin-top: 6vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 6vh;
+}
+
+.title{
+  font-family: "klavika-web", sans-serif;
+  font-size: 4vw;
+  color: #1b1b1b;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.subtitle{
+  color: #ef4023;
+  font-family: "klavika-web", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  margin: 0;
+}
 
 .section-discography{
-  margin-top: 12vh;
+  margin: 5vw;
   padding-left: 5vw;
   padding-right: 5vw;
   display: flex;
@@ -285,7 +333,7 @@ img.inicio {
   display: flex;
   justify-content: center;
   gap: 40px;
-  max-width: 1080px;
+  max-width: 1350px;
 }
 
 .discografia-div-img {
@@ -335,8 +383,7 @@ img.inicio {
   border-width: 2px;
   width: 100%;
   padding-bottom: 5px;
-  font-size: 1.1vw;
-
+  font-size: 1em;
 }
 
 .album-more{
