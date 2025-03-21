@@ -48,8 +48,14 @@ function mostrarCarrito() {
     const contenedor = document.getElementById("contenedor-carrito");
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+    if (carrito.length === 0) {
+        contenedor.innerHTML = "<p>No hay productos en tu carrito.</p>";
+        return;
+    }
+
     let subtotal = 0; // Inicializamos el subtotal
-  
+    contenedor.innerHTML = ""; // Limpiamos el contenedor antes de agregar los productos
+    
     carrito.forEach(item => {
       const nuevoDiv = document.createElement("div");
       
@@ -84,12 +90,17 @@ function mostrarCarrito() {
   const envio = 15; // Costo de envío
   const total = subtotal + envio;
 
-  // Mostrar subtotal, envío y total en la interfaz
-  const subtotalElemento = document.querySelector(".right-bar p span:nth-child(1)");
-  const totalElemento = document.querySelector(".right-bar p span:nth-child(3)");
+  // Selección más robusta para los elementos de subtotal y total
+const subtotalElemento = document.querySelector(".right-bar .subtotal span:nth-of-type(2)");
+const totalElemento = document.querySelector(".right-bar .total span:nth-of-type(2)");
 
-  subtotalElemento.textContent = `$${subtotal.toFixed(2)}`; // Subtotal con dos decimales
-  totalElemento.textContent = `$${total.toFixed(2)}`; // Total con dos decimales
+  if (subtotalElemento && totalElemento) {
+    // Verifica que el subtotal no sea NaN antes de mostrarlo
+    subtotalElemento.textContent = `$${subtotal.toFixed(2)}`;
+    totalElemento.textContent = `$${total.toFixed(2)}`;
+  } else {
+    console.error("No se pudieron encontrar los elementos de subtotal y total.");
+  }
 }
 
 // Verificamos si estamos en la página de carrito para ejecutar la función mostrarCarrito()
