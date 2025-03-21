@@ -22,7 +22,7 @@ html, body {
   transform: translateX(-50%);
   width: 100%;
   text-align: center;
-  background-color: white;
+  background-color: transparent;
   z-index: 1000;
   
   animation: menu-animation linear both;
@@ -74,9 +74,28 @@ img.inicio {
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0.5) 90%, rgba(0,0,0,0));
 }
 
+.album-main-image{
+  display: block;
+  width: 100vw;    
+
+  object-fit: cover; 
+  transform: translatey(-15vh);
+  top: 0px;
+}
+
+@media (max-width: 1200px) {
+  .album-main-image{
+    height: 60vh;
+  }
+  .mainimage{
+    height: 60vh;
+  }
+}
+
+
 .mainimage {
   width: 100vw;
-  height: 35dvw;
+  height: 80vh;
   padding-top: 4.1rem;
   max-width: max-content;
   max-height: max-content;
@@ -338,9 +357,8 @@ img.inicio {
 
 .discografia-div-img {
   width: 40vw;
+  height: 55vh;
   max-width: 500px;
-  aspect-ratio: 1/1;
-  object-fit: cover; /* O 'contain' si prefieres que no recorte */
   display: block;
 }
 
@@ -402,6 +420,10 @@ img.inicio {
   text-decoration: none;
   color: #66666670;
   font-weight: 800;
+  &:hover{
+    cursor: pointer;
+    color: #ef4023;
+  }
 }
 
 @keyframes reveal {
