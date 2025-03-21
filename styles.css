@@ -436,3 +436,30 @@ img.inicio {
     scale: 1;
   }
 }
+
+.reproductor-div{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.album-details {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
+.album-more {
+  list-style: none; 
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
